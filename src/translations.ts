@@ -81,12 +81,18 @@ export interface TranslationType {
   srvInteriorDesignDesc: string;
   srvExhibDesignTitle: string;
   srvExhibDesignDesc: string;
-  srvExhibExecTitle: string;
-  srvExhibExecDesc: string;
   srvTrainingTitle: string;
   srvTrainingDesc: string;
   srvBimTrainingTitle: string;
   srvBimTrainingDesc: string;
+  srvWebDesignTitle: string;
+  srvWebDesignDesc: string;
+  srvDatabaseMgmtTitle: string;
+  srvDatabaseMgmtDesc: string;
+  srvMaquettesTitle: string;
+  srvMaquettesDesc: string;
+  srvSustainablePlanningTitle: string;
+  srvSustainablePlanningDesc: string;
   srvConsultingTitle: string;
   srvConsultingDesc: string;
 
@@ -202,30 +208,36 @@ export const translations: Record<"ar" | "en", TranslationType> = {
     srvArchDesignDesc: "تقديم حلول ومخططات معمارية مبتكرة ومتكاملة للمباني السكنية والتجارية.",
     srvInteriorDesignTitle: "التصميم الداخلي",
     srvInteriorDesignDesc: "تصميم فراغات داخلية راقية تلبي تطلعات العميل وتجسد الفخامة بأسلوب عصري.",
-    srvExhibDesignTitle: "تصميم أجنحة المعارض",
-    srvExhibDesignDesc: "ابتكار هويات بصرية ثلاثية الأبعاد لأجنحة المعارض بطرق تبرز قوة العلامات التجارية.",
-    srvExhibExecTitle: "تنفيذ وتجهيز أجنحة المعارض",
-    srvExhibExecDesc: "تصنيع وتركيب أجنحة المعارض بأحدث الخامات والمعدات وبإشراف هندسي صارم.",
+    srvExhibDesignTitle: "تصميم وتنفيذ أجنحة المعارض",
+    srvExhibDesignDesc: "ابتكار هويات بصرية ثلاثية الأبعاد، وتصنيع وتجهيز أجنحة المعارض بأحدث الخامات وبإشراف هندسي ميداني صارم.",
     srvTrainingTitle: "تدريب البرامج الهندسية",
     srvTrainingDesc: "كورس ومناهج تدريبية مكثفة واحترافية للطلاب والمهندسين لضمان التميز في سوق العمل.",
     srvBimTrainingTitle: "التدريب على منهجية BIM",
     srvBimTrainingDesc: "تأهيل المهندسين لاستخدام برامج الـ BIM (مثل Revit) وربطها بالإنتاجية الفعلية.",
+    srvWebDesignTitle: "تصميم وتطوير المواقع الإلكترونية",
+    srvWebDesignDesc: "تصميم وبرمجة مواقع ويب احترافية مخصصة للمهندسين والشركات لتسويق أعمالهم وهويتهم الرقمية بجاذبية.",
+    srvDatabaseMgmtTitle: "إدارة قواعد البيانات الهندسية",
+    srvDatabaseMgmtDesc: "تنظيم وإدارة وتطوير قواعد البيانات للمشاريع الكبيرة والمنظومات الإدارية والبرمجية الهندسية لضمان كفاءة معالجة البيانات وسرعتها.",
+    srvMaquettesTitle: "صناعة الماكيتات والمجسمات المعمارية الفاخرة",
+    srvMaquettesDesc: "تنفيذ وتجهيز مجسمات معمارية فاخرة بدقة متناهية تحاكي تفاصيل الواقع بحرفية عالية تبرز تفاصيل وأبعاد المشروع بدقة هندسية.",
+    srvSustainablePlanningTitle: "تخطيط ودراسة المشاريع المستدامة",
+    srvSustainablePlanningDesc: "دراسة وتخطيط المشاريع التنموية المستدامة والصديقة للبيئة على مستوى التخطيط العمراني والتطوير المحلي لضمان مستقبل مستدام.",
     srvConsultingTitle: "الاستشارات الهندسية والتقنية",
-    srvConsultingDesc: "مراجعة التصاميم وتقديم التوصيات التقنية والفنية لتحسين كفاءة وجودة المشاريع.",
+    srvConsultingDesc: "مراجعة التصاميم المعمارية والبرامج وتقديم أفضل التوصيات التقنية والفنية لتحسين كفاءة وجودة المشاريع والمنظومات.",
 
     // Academy & Expo Sections
-    academySectionTitle: "معرض الأعمال",
+    academySectionTitle: "منصاتنا وأعمالنا",
     academyTitle: "أكاديمية أبعاد الهندسية المعمارية",
-    academyDesc: "الأكاديمية الهندسية الرائدة أونلاين، المتخصصة في تقديم برامج تدريبية تخصصية متقدمة في البرامج والمفاهيم المعمارية والإنشائية، وتأهيل الطلاب والمهندسين من سوريا ومختلف أرجاء الوطن العربي لسوق العمل بجدارة ومهارة عالية.",
-    btnVisitAcademy: "زيارة الأكاديمية",
-    expoTitle: "أبعاد إكسبو سوريا (Abaad Expo Syria)",
-    expoDesc: "الشركة الرائدة والمتخصصة في مجالات تصميم وتنفيذ وتجهيز المعارض والمؤتمرات الدولية والمحلية في سوريا، بتقديم تصاميم أجنحة مذهلة وحلول تنفيذية متكاملة تضمن تجربة عرض استثنائية وأداءً يشهد له كبار العارضين.",
-    btnVisitExpo: "زيارة الشركة والدخول للموقع",
+    academyDesc: "الأكاديمية السورية الأولى للتدريب الهندسي أونلاين. نتميز بتقديم دورات تخصصية عالية المستوى في هندسة العمارة والبرامج الهندسية (BIM & CAD) لتمكين الطلاب والمهندسين من التميز الفعلي والنجاح المهني والعملي في كبرى المكاتب والشركات عالمياً ومحلياً.",
+    btnVisitAcademy: "زيارة موقع الأكاديمية الرسمي",
+    expoTitle: "أبعاد إكسبو سوريا",
+    expoDesc: "الشركة الرائدة في تصميم وتصنيع وتنفيذ أجنحة المعارض الفاخرة والمؤتمرات الرسمية في سوريا. نقدم تجهيزات معارض مميزة وهياكل مبتكرة تجمع بين دقة التنفيذ والسرعة والتطابق الهندسي لضمان ترويج فعال وهوية بصرية رائدة لعملائنا.",
+    btnVisitExpo: "زيارة موقع أبعاد إكسبو الرسمي",
 
     // Contact
     contactTitle: "تواصل معي مباشرة",
-    contactSubtitle: "هل لديك مشروع، رغبة في التدريب، أو استشارة؟ دعنا نتعاون معاً لتحويل رؤيتك إلى واقع مبهر.",
-    contactWhatsAppLabel: "راسلني مباشرة عبر واتساب",
+    contactSubtitle: "هل لديك مشروع طموح، أو هدف تدريبي، أو تحتاج إلى استشارة هندسية تخصصية؟ أنا هنا لمساعدتك على تحقيق رؤيتك وتجسيدها على أرض الواقع.",
+    contactWhatsAppLabel: "تواصل عبر واتساب مباشرة",
     contactFacebookLabel: "تابع الحساب الشخصي على فيسبوك",
     contactInstagramLabel: "تابعني عبر انستغرام",
     contactAcademyLabel: "موقع أكاديمية أبعاد الرسمي",
@@ -323,14 +335,20 @@ export const translations: Record<"ar" | "en", TranslationType> = {
     srvArchDesignDesc: "High-end blueprints and spatial design solutions for outstanding residential, corporate, and public projects.",
     srvInteriorDesignTitle: "Interior Architecture",
     srvInteriorDesignDesc: "Luxurious spatial details, bespoke furnishing layouts, and lightning plans that redefine modern premium spaces.",
-    srvExhibDesignTitle: "Exhibition Pavilion Design",
-    srvExhibDesignDesc: "Cutting-edge 3D branding and spatial design concepts that highlight brand presence in prestigious expos.",
-    srvExhibExecTitle: "Exhibition Pavilions Execution",
-    srvExhibExecDesc: "Impeccable structural manufacturing, installation, and engineering supervision of complex pavilion setups.",
+    srvExhibDesignTitle: "Exhibition Pavilions Design & Execution",
+    srvExhibDesignDesc: "Comprehensive 3D branding, manufacturing, assembly, and precise on-site engineering supervision of premium exhibition setups.",
     srvTrainingTitle: "Engineering Software Training",
     srvTrainingDesc: "Intensive courses with comprehensive curricula covering CAD/BIM tools for professional readiness.",
     srvBimTrainingTitle: "BIM Training (Revit & Beyond)",
     srvBimTrainingDesc: "Equipping architectural practices and individuals with robust BIM standards to enhance collaborative productivity.",
+    srvWebDesignTitle: "Web Design & Development",
+    srvWebDesignDesc: "Designing and programming professional, sleek web applications tailored for firms and engineers to showcase their digital brand.",
+    srvDatabaseMgmtTitle: "Engineering Database Management",
+    srvDatabaseMgmtDesc: "Architecting, managing, and optimizing secure, large-scale database systems for engineering workflows and organizations.",
+    srvMaquettesTitle: "Premium Architectural Models & Maquettes",
+    srvMaquettesDesc: "Crafting exquisite, high-precision architectural models and maquettes with impeccable detailing to represent blueprints realistically.",
+    srvSustainablePlanningTitle: "Sustainable Urban & Local Master Planning",
+    srvSustainablePlanningDesc: "Studying and designing sustainable development projects that promote eco-friendly, resilient master planning at urban and local levels.",
     srvConsultingTitle: "Technical & Design Consulting",
     srvConsultingDesc: "In-depth plan reviews, material advising, and technical consultations to streamline and upgrade engineering workflows.",
 

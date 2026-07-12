@@ -185,3 +185,15 @@ html.light ::-webkit-scrollbar-thumb:hover {
   background: #FF7A00;
 }
 
+/* Accessibility: Brighter gray text in dark mode (black theme) */
+html:not(.light) .text-gray-400 {
+  color: #D1D5DB !important; /* Light slate/gray close to white */
+}
+html:not(.light) .text-gray-500 {
+  color: #E5E7EB !important; /* Brighter gray */
+}
+html:not(.light) .text-gray-300 {
+  color: #F3F4F6 !important; /* Very close to white */
+}
+
+

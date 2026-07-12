@@ -5,7 +5,10 @@ import {
   Sparkles,
   Wrench,
   MonitorPlay,
+  Layers,
+  Globe,
   Database,
+  Leaf,
   Briefcase,
 } from "lucide-react";
 import { TranslationType } from "../translations";
@@ -38,12 +41,6 @@ export default function Services({ currentLang, t }: ServicesProps) {
       icon: <Sparkles className="w-6 h-6 text-brand-orange" />,
     },
     {
-      id: "srv-exhib-exec",
-      title: t.srvExhibExecTitle,
-      description: t.srvExhibExecDesc,
-      icon: <Wrench className="w-6 h-6 text-brand-orange" />,
-    },
-    {
       id: "srv-training",
       title: t.srvTrainingTitle,
       description: t.srvTrainingDesc,
@@ -53,7 +50,31 @@ export default function Services({ currentLang, t }: ServicesProps) {
       id: "srv-bim-training",
       title: t.srvBimTrainingTitle,
       description: t.srvBimTrainingDesc,
+      icon: <Layers className="w-6 h-6 text-brand-orange" />,
+    },
+    {
+      id: "srv-web-design",
+      title: t.srvWebDesignTitle,
+      description: t.srvWebDesignDesc,
+      icon: <Globe className="w-6 h-6 text-brand-orange" />,
+    },
+    {
+      id: "srv-database",
+      title: t.srvDatabaseMgmtTitle,
+      description: t.srvDatabaseMgmtDesc,
       icon: <Database className="w-6 h-6 text-brand-orange" />,
+    },
+    {
+      id: "srv-maquettes",
+      title: t.srvMaquettesTitle,
+      description: t.srvMaquettesDesc,
+      icon: <Wrench className="w-6 h-6 text-brand-orange" />,
+    },
+    {
+      id: "srv-sustainable",
+      title: t.srvSustainablePlanningTitle,
+      description: t.srvSustainablePlanningDesc,
+      icon: <Leaf className="w-6 h-6 text-brand-orange" />,
     },
     {
       id: "srv-consulting",
@@ -98,7 +119,7 @@ export default function Services({ currentLang, t }: ServicesProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                className={`glassmorphism rounded-2xl p-8 border hover:bg-white/[0.03] transition-all duration-300 group flex flex-col justify-between h-[250px] relative ${
+                className={`glassmorphism rounded-2xl p-8 border hover:bg-white/[0.03] transition-all duration-300 group flex flex-col justify-between min-h-[260px] pb-6 relative ${
                   isSpecial 
                     ? "border-brand-orange/30 bg-brand-orange/[0.02] shadow-[0_0_30px_rgba(255,122,0,0.05)]" 
                     : "border-white/5"
@@ -122,7 +143,7 @@ export default function Services({ currentLang, t }: ServicesProps) {
                   <h3 className="text-lg sm:text-xl font-bold text-white font-display group-hover:text-brand-orange transition-colors">
                     {srv.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-400 font-light group-hover:text-gray-300 transition-colors leading-relaxed line-clamp-3">
+                  <p className="text-xs sm:text-sm text-gray-400 font-light group-hover:text-gray-300 transition-colors leading-relaxed">
                     {srv.description}
                   </p>
                 </div>
