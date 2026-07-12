@@ -36,10 +36,18 @@
   }
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   background-color: #161618;
   color: #F3F4F6;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Day/Night Light Mode Professional Overrides */

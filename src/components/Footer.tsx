@@ -67,7 +67,7 @@ export default function Footer({ currentLang, t }: FooterProps) {
               </a>
               <a
                 id="footer-social-facebook"
-                href="https://www.facebook.com/amer.hamamy.9/"
+                href="https://www.facebook.com/amir.aldeen.alhammami/"
                 target="_blank"
                 className="p-2.5 rounded-full bg-white/[0.03] border border-white/5 text-gray-400 hover:text-white hover:border-brand-orange/30 hover:bg-brand-orange/10 transition-all duration-300"
               >

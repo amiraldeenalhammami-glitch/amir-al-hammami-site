@@ -15,7 +15,7 @@ export default function App() {
   const t = translations[lang];
 
   const [theme, setTheme] = useState<"dark" | "light">(() => {
-    return (localStorage.getItem("theme") as "dark" | "light") || "light";
+    return (localStorage.getItem("theme") as "dark" | "light") || "dark";
   });
 
   // Toggle light/dark classes on html
@@ -39,7 +39,7 @@ export default function App() {
   }, [lang]);
 
   return (
-    <div className="min-h-screen bg-brand-dark text-[#F3F4F6] font-sans antialiased selection:bg-brand-orange selection:text-black">
+    <div className="min-h-screen w-full overflow-x-hidden relative bg-brand-dark text-[#F3F4F6] font-sans antialiased selection:bg-brand-orange selection:text-black">
       {/* Premium Luxury Background Accent Overlays */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         {/* Subtle top amber glow */}

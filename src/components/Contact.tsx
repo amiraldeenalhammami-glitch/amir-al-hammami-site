@@ -64,7 +64,7 @@ export default function Contact({ currentLang, t }: ContactProps) {
       id: "channel-facebook",
       label: t.contactFacebookLabel,
       icon: <Facebook className="w-5 h-5 text-[#1877F2]" />,
-      href: "https://www.facebook.com/amer.hamamy.9/",
+      href: "https://www.facebook.com/amir.aldeen.alhammami/",
       bgColor: "hover:bg-[#1877F2]/10 hover:border-[#1877F2]/30",
     },
     {
@@ -85,7 +85,7 @@ export default function Contact({ currentLang, t }: ContactProps) {
       id: "channel-youtube",
       label: t.contactYoutubeLabel,
       icon: <Youtube className="w-5 h-5 text-[#FF0000]" />,
-      href: "https://www.youtube.com/@abaadacademy",
+      href: "https://www.youtube.com/@ab3adacademy",
       bgColor: "hover:bg-[#FF0000]/10 hover:border-[#FF0000]/30",
     },
     {
